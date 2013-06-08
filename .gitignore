@@ -35,3 +35,11 @@ xmlrpc.php
 /profiles
 /scripts
 /themes
+
+
+#ingore zend studio files
+.buildpath
+.project
+.settings
+
+
