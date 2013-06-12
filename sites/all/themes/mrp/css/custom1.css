@@ -1,0 +1,174 @@
+/*----------------------------
+Custom CSS
+-----------------------------*/
+
+/* @group General Styles */
+body {
+	margin:0px;
+	padding:0px;
+	background-color:#fdfaf5;
+	font-size:100%;
+	font-size:.88em;
+}
+
+* {
+	position:relative;
+}
+
+.no-spacing {
+	padding:0px;
+	margin:0px;
+}
+
+.small-row {
+	width:90% !important;
+	margin:0px auto;
+}
+
+h3 {
+	color:rgba(97,142,128,0.98);;
+}
+/* @end */
+
+
+/* @group Header */
+
+header {
+	margin-bottom:20px;
+}
+
+#app-title-bar {
+	background-color:#003466;
+	border-bottom:8px solid #485058;
+	height:100%px;
+	overflow:visible;
+}
+
+
+#app-title-bar h4 {
+	color:#fff;
+	margin:0px;
+	padding:6px;
+	max-height:30px;
+}
+
+#app-logo {
+	width:177px;
+	height:38px;
+	overflow:visible;
+	z-index:100;
+	left:-7px;
+}
+
+
+/* @group Navigation */
+
+.app-nav-margin {
+	left:177px;
+}
+
+#app-nav {
+	min-height: 30px;
+	padding-right: 0px;
+	padding-left: 0px;
+	background-color: #fafafa;
+	background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
+	background-image: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: -o-linear-gradient(top, #ffffff, #f2f2f2);
+	background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+	background-repeat: repeat-x;
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 0px;
+	 -moz-border-radius: 0px;
+	      border-radius: 0px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);
+	*zoom: 1;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	 -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+	      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+}
+
+/* @end */
+
+/* @end */
+
+
+
+/* @group Bootstrap Overrides */
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 5px 15px 5px;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #ffffff;
+}
+
+.navbar .btn-navbar {
+	margin-bottom: 5px;
+}
+
+.navbar .btn-navbar {
+	padding:4px 7px;
+	margin-top:2px;
+}
+
+.dropdown-menu {
+	background-color:#fdfaf5;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  color: #ffffff;
+  background-color: rgba(97,142,128,0.98);
+  background-image: none;
+  background-image: transparent;
+}
+
+/* @end */
+
+
+
+/* @group Custom Responsive */
+
+@media (max-width: 767px) {
+	.app-nav-margin {
+		left:0px;
+	}
+
+	.nav-collapse .dropdown-menu > li > a:hover {
+		color:#333;
+	}
+
+	.nav-collapse .nav {
+		float: none;
+		margin: 15px 0 10px;
+	}
+
+	.small-row {
+		width:98% !important;
+	}
+
+	#app-title-bar h4 {
+		font-size:1em;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+@media (max-width: 480px) {
+
+	#app-title-bar h4 {
+		font-size:.90em;
+		line-height:15px;
+	}
+
+}
+
+/* @end */
